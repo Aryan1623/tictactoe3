@@ -46,8 +46,9 @@ const checkwinner = (button) => {
           alert("The winner is "+winner) ;
            winner2.innerText="Congratulations the winner is player "+winner;
            winner3.classList.remove("hidden2");
-           
-         }
+           buttons.forEach((button)=>{
+             button.disabled = true;  
+         })
          
           
         
